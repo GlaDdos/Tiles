@@ -13,6 +13,10 @@ body {
   height: 20px;
 }
 
+.icon-big{
+  height: 30px;
+}
+
 .icon-wrapper {
   display: flex;
   flex-grow: 1;
@@ -31,6 +35,7 @@ body {
   height: 75px;
   margin-top: 50px;
   background-color: #fff;
+  margin-bottom: 5px;
 }
 
 .hamburger-menu {
@@ -63,11 +68,18 @@ body {
   align-items: center;
 }
 
-.horizontal-menu li {
-  display: inline-block;
+nav ul {
+  background-color: #fff;
+}
+
+nav ul li {
   list-style: none;
   cursor: pointer;
   color: #475055;
+}
+
+.horizontal-menu li {
+  display: inline-block;
   padding-left: 25px;
 }
 
@@ -87,6 +99,140 @@ body {
   flex-grow: 2;
   border-left: 1px solid #b2b9be;
   border-right: 1px solid #b2b9be;
+}
+
+.section-social{
+  display: flex;
+  align-items: stretch;
+}
+
+.left-wrapper,
+.right-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-wrapper {
+  display: flex;
+}
+
+.social-list {
+  width: 50%;
+}
+
+.follower-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.follower-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 48%;
+}
+
+.follower-fb {
+  background-color: #4c6baa;
+}
+
+.follower-tw {
+  background-color: #4fc6f8;
+}
+
+.follower-logo {
+  padding-left: 20%;
+}
+
+.follower-desc {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.social-media li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  text-align: center;
+  list-style: none;
+  cursor: pointer;
+  color: #475055;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  min-height: 150px;
+}
+
+.social-network-wrapper{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.social-network-round {
+  display: inline-flex;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #899196;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form {
+  width: 100%;
+}
+
+.btn {
+  text-transform: uppercase;
+  line-height: 2rem;
+  width: 20%;
+  border-style: none;
+  border-radius: .5rem;
+}
+
+.btn-red {
+  color: white;
+  background-color: #ea6060;
+}
+
+.signup-form input {
+  line-height: 2rem;
+  width: 60%;
+}
+
+.menu-item{
+  display: flex;
+  height: 70px;
+  padding: 5px;
+  align-items: center;
+  border-bottom: 1px solid #C5C5C5;
+}
+
+.menu-icon {
+  margin: 20px;
+}
+
+.contact-info {
+  height: 100%;
+  background-color: #b4b4b4;
 }
 
 @media screen and (max-width: 1024px) {
