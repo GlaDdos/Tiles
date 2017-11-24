@@ -108,9 +108,18 @@ nav ul li {
 
 .left-wrapper,
 .right-wrapper {
-  width: 50%;
   display: flex;
+  flex-grow: 1;
+}
+
+.right-wrapper {
   flex-direction: column;
+  margin-left: 5px;
+}
+
+.left-wrapper {
+  flex-direction: row;
+  margin-right: 5px;
 }
 
 .social-wrapper {
@@ -118,29 +127,33 @@ nav ul li {
 }
 
 .social-list {
-  width: 50%;
+  flex-grow: 1;
+  margin-right: 5px;
 }
 
 .follower-wrapper{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
+  flex-grow: 1;
+  margin-left: 5px;
 }
 
 .follower-item {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 48%;
+  flex-grow: 1;
 }
 
 .follower-fb {
   background-color: #4c6baa;
+  margin-bottom: 5px;
 }
 
 .follower-tw {
   background-color: #4fc6f8;
+  margin-top: 5px;
 }
 
 .follower-logo {
@@ -177,7 +190,7 @@ nav ul li {
   justify-content: space-around;
   align-items: center;
   margin-top: 10px;
-  min-height: 150px;
+  flex-grow: 1;
 }
 
 .social-network-wrapper{
@@ -218,6 +231,10 @@ nav ul li {
   width: 60%;
 }
 
+.vertical-menu {
+  flex-grow: 1;
+}
+
 .menu-item{
   display: flex;
   height: 70px;
@@ -231,9 +248,49 @@ nav ul li {
 }
 
 .contact-info {
-  height: 100%;
-  background-color: #b4b4b4;
+  display: flex;
+  flex-direction: column;
+  background-color: #E46969;
 }
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.sub-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  background-color: #152840;
+}
+
+.sub-partial {
+  padding: 15px;
+  border-bottom: 1px solid #465c7a;
+}
+
+.sub-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  padding-bottom: 15px;
+  color: #56ccc8;
+  font-size: 1.2em;
+}
+
+.sub-content ul {
+  background-color: #152840;
+}
+
+.sub-content ul li {
+  color: #fff;
+  padding-bottom: 10px;
+}
+
 
 @media screen and (max-width: 1024px) {
   .container {
@@ -252,4 +309,26 @@ nav ul li {
   .horizontal-menu{
     display: none;
   }
+}
+
+.icon2 {
+  /* Lets the icon inherit the text color. */
+  fill: currentColor;
+
+  /* Inherit the text’s size too. Also allows sizing
+     the icon by changing its font-size. */
+  width: 1em;
+  height: 1em;
+
+  /* Nice visual alignment for icons alongside text.
+     (I got a few questions about this and: with most
+     fonts and styles, this works better than just
+     vertical-align:middle. Try it and see what you
+     like best. */
+  vertical-align: -0.15em;
+
+  /* Paths and strokes that overflow the viewBox can
+     show in IE. If you use normalize.css, it already
+     sets this. */
+  overflow: hidden;
 }
